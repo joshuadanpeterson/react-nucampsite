@@ -1,10 +1,8 @@
-import { CAMPSITES } from 'src/app/shared/CAMPSITES';
+import { CAMPSITES } from '../../app/shared/CAMPSITES';
 
-export const selectAllCampsites = () => {
-    return CAMPSITES;
-};
+export const selectAllCampsites = () => CAMPSITES;
 
 export const selectRandomCampsite = () => {
-    const randomIndex = Math.floor(Math.random() * CAMPSITES.length);
-    return CAMPSITES[randomIndex];
+  const randomIndex = Math.floor(Math.random() * CAMPSITES.length);
+  return CAMPSITES[randomIndex];
 };
