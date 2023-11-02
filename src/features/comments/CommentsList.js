@@ -9,6 +9,13 @@ const CommentsList = ({ campsiteId }) => {
     if (comments && comments.length > 0) {
         return (
             <Col md='5' className='m-1'>
+{
+
+}
+                <h4>Comments</h4>
+{
+
+}
                 {comments.map((comment) => {
                     return <Comment key={comment.id} comment={comment} />;
                 })}

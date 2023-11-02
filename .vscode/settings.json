@@ -1,3 +1,5 @@
 {
-    "editor.acceptSuggestionOnEnter": "on"
+    "editor.acceptSuggestionOnEnter": "on",
+    "superBG.disable": false,
+    "superBG.opacity": 36
 }

@@ -20,16 +20,43 @@ const CommentForm = ({ campsiteId }) => {
     }
     return (
         <>
-            <Button outline={true} onClick={() => setModalOpen(true)}>
+{
+
+}
+
+            <Button outline onClick={() => setModalOpen(true)}>
+{
+
+}
                 <i className='fa fa-pencil fa-lg' /> Add Comment
             </Button>
             <Modal isOpen={modalOpen}>
                 <ModalHeader toggle={() => setModalOpen(false)}> Add Comment</ModalHeader>
                 <ModalBody>
-                    <Formik initialValues={{ author: '', commentText: '' }} onSubmit={(handleSubmit)} validate={validateCommentForm}>
+{
+
+}
+                    <Formik
+                        initialValues={{
+                            rating: undefined,
+                            author: '',
+                            commentText: ''
+                        }}
+                        onSubmit={handleSubmit}
+                        validate={validateCommentForm}
+                    >
+{
+
+}
                         <Form>
                             <FormGroup>
-                                <Label htmlFor={'rating'}>Rating</Label>
+{
+
+}
+                                <Label htmlFor='rating'>Rating</Label>
+{
+
+}
                                 <Field
                                         name='rating'
                                         as='select'
@@ -49,7 +76,13 @@ const CommentForm = ({ campsiteId }) => {
                             </FormGroup>
                                 
                             <FormGroup>
-                                <Label htmlFor={'author'}>Your Name</Label>
+{
+
+}
+                                <Label htmlFor='author'>Your Name</Label>
+{
+
+}
                                 <Field
                                         name='author'
                                         placeholder='Your Name'
@@ -61,7 +94,13 @@ const CommentForm = ({ campsiteId }) => {
                             </FormGroup>
 
                             <FormGroup>
-                                <Label htmlFor={'commentText'}>Comment</Label>
+{
+
+}
+                                <Label htmlFor='commentText'>Comment</Label>
+{
+
+}
                                 <Field
                                         name='commentText'
                                         as='textarea'
